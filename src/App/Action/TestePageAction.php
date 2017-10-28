@@ -26,6 +26,6 @@ class TestePageAction
     public function __invoke(ServerRequestInterface $request, ResponseInterface $response, callable $next = null)
     {
 
-        return new HtmlResponse($this->template->render('app::teste',['data' => 'Minha primeira aplicação, rota teste ok. Aluno: Neylor Cesar!']));
+        return new HtmlResponse($this->template->render('app::teste',['data' => 'Minha primeira aplicação, rota teste ok! Aluno: Neylor Cesar!']));
     }
 }
